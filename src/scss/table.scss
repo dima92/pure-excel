@@ -59,7 +59,7 @@
     outline: none;
 
 
-    & .selected {
+    &.selected {
       border: none;
       outline: 2px solid $primary-color;
       z-index: 2;
