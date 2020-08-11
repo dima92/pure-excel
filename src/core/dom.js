@@ -9,6 +9,11 @@ class Dom {
     return this.$el.dataset
   }
 
+  clear() {
+    this.html('')
+    return this
+  }
+
   html(html) {
     if (typeof html === 'string') {
       this.$el.innerHTML = html
@@ -26,11 +31,6 @@ class Dom {
       return this.$el.value.trim()
     }
     return this.$el.textContent.trim()
-  }
-
-  clear() {
-    this.html('')
-    return this
   }
 
   on(eventType, callback) {
